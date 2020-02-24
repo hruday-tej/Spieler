@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/gradientbg2"
+    >
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="418dp"
+        android:layout_marginBottom="120sp"
+        android:fontFamily="@font/handlee"
+        android:text='Become a "SPIELER"!'
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/margarine"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginRight="100dp"
+        android:layout_centerHorizontal="true"
+        android:width="200dp"
+        android:background="@drawable/button_type2"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="Already Have an Account"
+        android:textAlignment="center"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/start_reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/margarine"
+        android:layout_below="@+id/start_login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="100dp"
+        android:width="200dp"
+        android:background="@drawable/button_type4"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        style="@style/SelectableItemBackground"
+        android:text="Need a New Account?"
+        android:textAlignment="center"
+        android:textColor="#0082c8" />
+</RelativeLayout>

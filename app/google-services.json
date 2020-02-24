@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "468971364262",
+    "firebase_url": "https://spieler-324d6.firebaseio.com",
+    "project_id": "spieler-324d6",
+    "storage_bucket": "spieler-324d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468971364262:android:5414f27f6cefd371f8f967",
+        "android_client_info": {
+          "package_name": "com.example.spieler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468971364262-l8l7qibfjv6t8re626043n4ne20clind.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spieler",
+            "certificate_hash": "6ed5ad3279cf7168bb72ed6a10f434653ea3ce61"
+          }
+        },
+        {
+          "client_id": "468971364262-n4r6lcm73ngtkbnc0838s9fdivdqtms7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjy9bzZ6GOHfxTK0g3vi-o2QnwzMZlOm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468971364262-n4r6lcm73ngtkbnc0838s9fdivdqtms7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
