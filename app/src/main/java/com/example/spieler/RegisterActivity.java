@@ -53,7 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
         signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 String Email = mEmail.getEditText().getText().toString();
+                String Email = mEmail.getEditText().getText().toString();
                 String Password = mPassword.getEditText().getText().toString();
                  final String Name = mDisp.getEditText().getText().toString();
                 if(Email.isEmpty()){
@@ -85,7 +85,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 HashMap<String, String> usermap = new HashMap<>();
                                 usermap.put("Name",Name);
                                 usermap.put("Status","Hi welcome to spieler");
-                                usermap.put("Image","default");
+                                usermap.put("Image","https://i0.wp.com/www.repol.copl.ulaval.ca/wp-content/uploads/2019/01/default-user-icon.jpg");
                                 usermap.put("Thumb_img","default");
                                 mdatabase.setValue(usermap);
                                 regProg.hide();

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -31,9 +32,12 @@ import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.Random;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+//import id.zelory.compressor.Compressor;
 
 public class AccountSettingsActivity extends AppCompatActivity {
 
@@ -137,9 +141,27 @@ public class AccountSettingsActivity extends AppCompatActivity {
                 mprog.setMessage("Hold on to your BUTTS while we upload your DP");
                 mprog.setCanceledOnTouchOutside(false);
                 mprog.show();
+
+
+
                 Uri resultUri = result.getUri();
                 String user = muser.getUid();
+                File thumb_filePath = new File(resultUri.getPath());
+
+//                Bitmap thumb_bitmap = new Compressor(this)
+//                        .setMaxWidth(200)
+//                        .setMaxHeight(200)
+//                        .setQuality(75)
+//                        .compressToBitmap(thumb_filePath);
+//
+//                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//                thumb_bitmap.compress(Bitmap.CompressFormat.JPEG,100,baos);
+//                byte[] thumb_byte = baos.toByteArray();
+
                 StorageReference filepath = mimagestorage.child("profile_images").child(user+".jpg");
+
+//                StorageReference thumb_filepath = mimagestorage.child("profile_images").child("thumbs").child(mus)
+
                 filepath.putFile(resultUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
